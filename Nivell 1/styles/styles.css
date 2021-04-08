@@ -1,0 +1,27 @@
+.pilota {
+  background:url(images/tenis.png);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: bota 4s linear infinite alternate, moviment 4s linear infinite alternate;
+}
+
+
+@keyframes moviment {
+  from {left: 0;}
+  to   {left: 100%;}
+}
+
+
+@keyframes bota {
+  0%   {left:0px; top:0px;}
+
+  25%  {left:300px; top:600px;}
+
+  50%  {left:600px; top:0px;}
+
+  75%  {left:900px; top:600px;}
+
+ 100%   {left:1100px; top:0px;}
+
+}

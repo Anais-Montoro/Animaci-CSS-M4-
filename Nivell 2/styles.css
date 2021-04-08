@@ -1,0 +1,29 @@
+.pilota {
+  background:url(images/tenis.png);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: bota 4s linear infinite alternate, moviment 4s linear infinite alternate;
+}
+
+
+@keyframes moviment {
+  from {left: 0;}
+  to   {left: 100%;}
+}
+
+
+@keyframes bota {
+
+  0%   {left:0px; top:0px; animation-timing-function: ease-out}
+
+  25%  {left:300px; top:600px; height:60px; width: 100px;animation-timing-function: ease-in}
+
+  50%  {left:600px; top:0px; height:100px; width: 100px;animation-timing-function: ease-in}
+
+  75%  {left:900px; top:600px; height:60px; width: 100px; animation-timing-function: ease-out}
+
+ 100%   {left:1100px; top:0px; height:100px; width: 100px;}
+
+
+}
